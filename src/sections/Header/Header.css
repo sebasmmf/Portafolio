@@ -1,0 +1,121 @@
+.header {
+    height: 12vh;
+    min-height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-10px, 0);
+    z-index: 10;
+    padding: 10px 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white-glass);
+    backdrop-filter: blur(20px);
+}
+
+.header .logo_wrapper {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img{
+    width: 30px;
+    transform: scale(1);
+    transition: all .5s ease;
+}
+
+.header img[alt='linkedIn icon'] {
+    width: 25px;
+}
+
+.header img:is(:hover, :focus) {
+    transform: scale(1.2);
+}
+
+.header img:active {
+    transform: scale(.9);
+}
+
+.header .navbar a {
+    margin: 0 10px;
+    font-weight: 700;
+    color: var(--gray);
+}
+
+.header .navbar a:focus {
+    outline: none;
+}
+
+.header .navbar button {
+    height: 30px;
+    width: fit-content;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: var(--gray);
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: 700;
+    transition: background-color .5s ease, color .5s ease;
+}
+
+.header .navbar button:is(:hover, :focus) {
+    background-color: var(--cyan);
+}
+
+
+.header .social_medias {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header .menu {
+    height: 30px;
+    width: 30px;
+    display: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.header .menu img {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        transform: translate(0, 0);
+    }
+
+    .header .navbar, .header .social_medias {
+        display: none;
+    }
+
+    .header .menu {
+        display: flex;
+    }
+
+    .header .logo_wrapper, .header img {
+        transform: scale(1.3);
+    }
+
+    .header .logo_wrapper {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+    }
+}

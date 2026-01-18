@@ -1,0 +1,69 @@
+.toggle-menu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    overflow: hidden;
+    display: grid; /* cambiar*/
+    place-content: center;
+    background-color: var(--white);
+    transition: width ease .3s;
+}
+
+.toggle-menu .btn-close-menu {
+    height: auto;
+    width: 40px;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    background: none;
+    border: none;
+}
+
+.toggle-menu .navbar {
+    height: 400px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-menu .navbar button {
+    height: 40px;
+    width: 120px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--gray);
+    border: none;
+    border-radius: 20px;
+    background: transparent;
+    transition: all ease .4s;
+}
+
+.toggle-menu .navbar button:is(:active) {
+    background-color: var(--cyan);
+}
+
+.toggle-menu .navbar button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: var(--gray);
+}
+
+.toggle-menu .social-medias {
+    width: 150px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

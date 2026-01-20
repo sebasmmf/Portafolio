@@ -6,7 +6,7 @@
 
 .skills-section .skills-box {
     padding: 20px 3vw;
-    margin: 20px 0 50px 0;
+    margin: 20px 0 0 0;
     flex: 1;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -20,7 +20,7 @@
     align-items: center;
     border-radius: 10px;
     gap: 10px;
-    transition: box-shadow .5s ease;
+    transition: box-shadow .2s ease;
 }
 
 .skills-section .skills-box div:hover {

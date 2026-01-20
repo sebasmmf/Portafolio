@@ -6,7 +6,7 @@
 
   /* Colors var */
   --white: #ffffff;
-  --white-glass: hsla(0, 0%, 100%, 0.50);
+  --white-glass: hsla(0, 0%, 100%, 0.5);
   --cyan: #00FFD1;
   --darker-cyan: #20B197;
   --gray: #777777;
@@ -56,6 +56,10 @@ div[id] {
 
 a {
   text-decoration: none;
+}
+
+p {
+  font-weight: 500;
 }
 
 h1 {

@@ -1,12 +1,16 @@
 .projects-section {
 
-    background-image: linear-gradient(to top, var(--cyan), var(--darker-cyan));
-    margin-top: -2px;
+    background-image: linear-gradient(to top,
+    var(--white) 0%,
+    var(--darker-cyan),
+    var(--white) 100%
+    ); 
     scroll-snap-align: center;
 }
 
 .projects-section h1 {
-    color: var(--white);
+    color: var(--black);
+    margin-top: 2%;
 }
 
 .projects-section .projects-box {
@@ -17,7 +21,9 @@
 }
 
 .projects-section .projects-box .project {
-    height: 50vh;
+    min-height: 300px;
+    height: 60vh;
+    max-height: 400px;
     max-width: 350px;
     padding: 16px;
     margin: auto;

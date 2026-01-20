@@ -26,11 +26,19 @@
 .header img{
     width: 30px;
     transform: scale(1);
-    transition: all .5s ease;
+    transition: transform .5s ease;
 }
 
 .header img[alt='linkedIn icon'] {
     width: 25px;
+}
+
+.header img[alt='linkedIn icon']:hover {
+    filter: invert(21%) sepia(47%) saturate(7489%) hue-rotate(200deg) brightness(93%) contrast(92%);
+}
+
+.header img[alt='github icon']:hover {
+    filter: invert(0%) sepia(96%) saturate(0%) hue-rotate(296deg) brightness(110%) contrast(101%);
 }
 
 .header img:is(:hover, :focus) {

@@ -1,0 +1,139 @@
+.contact-section {
+    padding: 0 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-section p {
+    color: var(--gray);
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact-section .social-medias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.contact-section .links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    
+}
+
+.contact-section a {
+    min-width: 230px;
+    width: 60%;
+    max-width: 300px;
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 14px;
+    transition: all ease 0.3s;
+}
+
+.contact-section .LinkedIn {
+    background-color: #0A66C2;
+}
+
+.contact-section .LinkedIn:hover {
+    box-shadow: 0px 0px 20px #0A66C2;
+    transform: scale(1.05)
+}
+
+.contact-section .GitHub {
+    background-color: var(--black);
+}
+
+.contact-section .GitHub:hover {
+    box-shadow: 0px 0px 20px var(--black);
+    transform: scale(1.05)
+
+}
+
+.contact-form {
+    max-width: 720px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form p {
+    margin: 20px 0;
+}
+
+.contact-form .user-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form .user-info .field {
+    width: 47%;
+}
+
+.contact-form .field {
+    margin: 6px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-form label {
+    margin-left: 7px;
+    font-weight: 900;
+    color: var(--gray);
+}
+
+.contact-form input, .contact-form textarea {
+    border: 2px solid var(--gray);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contact-form input {
+    height: 40px;
+    transition: box-shadow ease 0.3s;
+}
+
+.contact-form input:is(:hover, :focus) {
+    box-shadow: 0px 0px 20px var(--gray);
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 30vh;
+    resize: none;
+    transition: box-shadow ease 0.3s;
+}
+
+.contact-form textarea:is(:hover, :focus) {
+    box-shadow: 0px 0px 20px var(--gray);
+    outline: none;
+}
+
+
+@media screen and (width < 665px) {
+    .contact-section .links {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-form .user-info {
+        flex-direction: column;
+    }
+
+    .contact-form .user-info .field {
+        width: 100%;
+    }
+}

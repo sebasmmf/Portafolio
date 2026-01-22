@@ -2,6 +2,7 @@ import MainSection from '../../sections/MainSection/MainSection';
 import ProjectsSection from '../../sections/ProjectsSection/ProjectsSection';
 import SkillsSection from '../../sections/SkillsSection/SkillsSection';
 import AboutSection from '../../sections/AboutSection/AboutSection';
+import ContactSection from '../../sections/ContactSection/ContactSection';
 
 export default function DashboardView() {
 
@@ -11,6 +12,7 @@ export default function DashboardView() {
             <SkillsSection />
             <ProjectsSection />
             <AboutSection />
+            <ContactSection />
         </>
     )
 }

@@ -8,7 +8,7 @@ function AboutSection() {
             <div className='info'>
                 
                 <div className='photograph'>
-                    <img src="./Imagen_Carnet.jpg" alt="iama" />
+                    <img src="./Imagen_Carnet.jpg" alt="personal image" />
                 </div>
 
                 <div className='description'>

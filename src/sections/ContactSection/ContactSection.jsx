@@ -21,7 +21,7 @@ function ContactSection() {
                     ))}
                 </div>
             </div>
-            <div className='contact-form'>
+            <form className='contact-form'>
                 <p>I’m always open to collaborating on innovative projects. Feel free to reach out, and let’s have a virtual coffee.</p>
                 <div className='user-info'>
                     <div className='field'>
@@ -41,7 +41,10 @@ function ContactSection() {
                     <label htmlFor="message">Message:</label>
                     <textarea id="message" placeholder='Drop me a line...'></textarea>
                 </div>
-            </div>
+                <div className='submit'>
+                    <input type="submit" value='Send' />
+                </div>
+            </form>
         </section>
     )
 }

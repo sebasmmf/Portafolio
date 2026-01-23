@@ -122,6 +122,25 @@
     outline: none;
 }
 
+.submit {
+    margin-top: 6px;
+    display: flex;
+    justify-content: end;
+}
+
+.submit input {
+    width: 25%;
+    color: var(--white);
+    background-color: var(--black);
+    cursor: pointer;
+    font-weight: 900;
+    transition: all ease 0.3s;
+}
+
+.submit input:active {
+    transform: scale(0.93);
+}
+
 
 @media screen and (width < 665px) {
     .contact-section .links {
@@ -134,6 +153,13 @@
     }
 
     .contact-form .user-info .field {
+        width: 100%;
+    }
+}
+
+@media screen and (width < 600px) {
+    
+    .submit input {
         width: 100%;
     }
 }

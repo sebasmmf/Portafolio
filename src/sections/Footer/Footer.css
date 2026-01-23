@@ -1,0 +1,16 @@
+footer {
+    display: grid;
+    place-content: center;
+    padding: 50px 10% 10px 10%;
+}
+
+footer p {
+    color: var(--gray);
+    text-align: center;
+}
+
+footer img {
+    height: 18px;
+    width: auto;
+    transform: translateY(3px);
+}

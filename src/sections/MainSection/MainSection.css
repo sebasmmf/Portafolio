@@ -134,7 +134,12 @@
     }
 
     .main .glass_card {
-        top: 25%;
+        top: 35%;
+        height: 200px;
+        width: 600px;
+        background-color: transparent;
+        backdrop-filter: none;
+        border: none;
     }
 
     .main .skills {

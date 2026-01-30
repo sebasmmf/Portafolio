@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { Outlet } from "react-router-dom"
 import Header from "../sections/Header/Header"
-import ToggleMenu from "../components/toggleMenu/toggleMenu"
+import Footer from "../sections/Footer/Footer"
+import ToggleMenu from "../components/ToggleMenu/ToggleMenu";
 import { ToastContainer } from 'react-toastify';
 
 
@@ -15,6 +16,8 @@ export default function AppLayout() {
                 setMenu={setMenu}
             />
             <Outlet />
+            <Footer />
+
             <ToggleMenu 
                 menu={menu}
                 setMenu={setMenu}

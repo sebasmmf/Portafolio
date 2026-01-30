@@ -3,12 +3,12 @@ import './AboutSection.css';
 function AboutSection() {
     return (
         <section className='about-section' id='about'>
-            <h1 className='title-gradient'>About Me</h1>
+            <h2 className='title-gradient'>About Me</h2>
 
             <div className='info'>
                 
                 <div className='photograph'>
-                    <img src="./Imagen_Carnet.jpg" alt="personal image" />
+                    <img src="./Imagen_Carnet.jpg" alt="Sebastian Martinez Image - Software Developer" />
                 </div>
 
                 <div className='description'>

@@ -8,7 +8,7 @@
     scroll-snap-align: center;
 }
 
-.projects-section h1 {
+.projects-section h2 {
     color: var(--black);
     margin-top: 2%;
 }

@@ -5,7 +5,7 @@ export default function ProjectsSection() {
     
     return (
         <section className='projects-section' id='projects'>
-            <h1>Projects</h1>
+            <h2>Projects</h2>
 
             <div className='projects-box'>
                 {projects.map(project => (

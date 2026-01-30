@@ -13,7 +13,7 @@ export default function MainSection() {
                 <img
                     className="image_sebastian"
                     src="/Imagen_Sebastian.png"
-                    alt="image sebastian"
+                    alt="Sebastian Martinez Image - Software Developer"
                 />
                 <div className="circle"></div>
             </div>

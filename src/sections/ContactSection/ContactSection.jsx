@@ -39,7 +39,7 @@ function ContactSection() {
 
     return (
         <section className='contact-section' id='contact'>
-            <h1 className='title-gradient'>Contact</h1>
+            <h2 className='title-gradient'>Contact</h2>
             <div className='social-medias'>
                 <p>Do you have a project in mind? Let’s discuss how I can help you bring it to life!</p>
                 <div className='links'>

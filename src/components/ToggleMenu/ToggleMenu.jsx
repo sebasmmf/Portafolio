@@ -35,6 +35,7 @@ const ToggleMenu = ({menu, setMenu}) => {
                     <a
                         key={socialMedia.name}
                         href={socialMedia.url}
+                        aria-label={socialMedia.name}
                         target='_blank'
                     >
                         <img src={socialMedia.image_src} alt={socialMedia.image_alt} />

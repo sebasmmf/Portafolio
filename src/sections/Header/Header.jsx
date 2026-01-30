@@ -7,7 +7,7 @@ function Header({setMenu}) {
     return (
         <header className='header'>
             <div className='logo_wrapper'>
-                <a className='logo' href="">
+                <a className='logo' href="#">
                     <img src="/logo_sebastian.svg" alt="logo personal" />
                 </a>
             </div>
@@ -30,6 +30,7 @@ function Header({setMenu}) {
                     <a
                         key={socialMedia.name}
                         href={socialMedia.url}
+                        aria-label={socialMedia.name}
                         target='_blank'
                     >
                         <img src={socialMedia.image_src} alt={socialMedia.image_alt} />

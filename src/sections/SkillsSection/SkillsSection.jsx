@@ -4,7 +4,7 @@ import './SkillsSection.css'
 export default function SkillsSection() {
     return (
         <section className='skills-section' id='skills'>
-            <h1 className='title-gradient'>Skills</h1>
+            <h2 className='title-gradient'>Skills</h2>
 
             <div className='skills-box'>
                 {skills.map(skill => (

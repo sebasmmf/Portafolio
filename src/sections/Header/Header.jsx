@@ -1,11 +1,22 @@
-
+import { useRef } from 'react';
 import { socialMedias, menuOptions } from '../../data/db';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 import './Header.css';
 
 function Header({setMenu}) {
+    const headerContainer = useRef();
+
+    useGSAP(() => {
+
+        if (menuOptions.length > 0 || socialMedias.length > 0) {
+            gsap.from(' a', {opacity: 0, duration: 1, stagger: 0.1, ease: 'power3.in'})
+        }
+    }, {scope: headerContainer, dependencies: [menuOptions, socialMedias]});
+
 
     return (
-        <header className='header'>
+        <header className='header' ref={headerContainer}>
             <div className='logo_wrapper'>
                 <a className='logo' href="#">
                     <img src="/logo_sebastian.svg" alt="logo personal" />
